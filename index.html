@@ -3,35 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Project Login</title>
+    <title>Secure Login Portal</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="logo-area">
-            <img src="LOGO.png" alt="College Logo Placeholder" class="logo">
-            <h1>Project Login</h1>
+            <img src="LOGO.png" alt="College Logo" class="logo">
+            <h1>Cyber Security Project</h1>
         </div>
         
-        <form class="login-form">
-            <h2>Sign In</h2>
+        <form class="login-form" onsubmit="window.location.href='dashboard.html'; return false;">
+            <h2>Please Sign In</h2>
+            <p>Welcome back, Engineer.</p>
             <div class="input-group">
                 <input type="text" id="username" placeholder="Username" required>
             </div>
             <div class="input-group">
                 <input type="password" id="password" placeholder="Password" required>
             </div>
-            <button type="submit" class="login-btn">LOG IN</button>
+            <button type="submit" class="primary-btn">LOG IN</button>
         </form>
-
-        <div class="search-area">
-            <h3>Search Anything</h3>
-            <div class="input-group">
-                <input type="text" id="search-input" placeholder="Enter keywords to search...">
-                <button type="button" class="search-btn">SEARCH</button>
-            </div>
-        </div>
     </div>
 </body>
 </html>
